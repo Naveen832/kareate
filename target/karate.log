@@ -1,0 +1,378 @@
+15:06:11.439 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:06:13.027 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:06:13.631 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users%3Fpage=2
+1 > Accept: application/json
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.4.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:06:14.225 [main] DEBUG com.intuit.karate - response time in milliseconds: 583
+1 < 200
+1 < Date: Wed, 04 Oct 2023 09:36:14 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2c1-N6Rqerxquq2kgQhL51EiSg4x0R8"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 663
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=YPzKyExT3QBiUiFBK8ebafB%2B6RyJ4NyIRMrVWfKpHIAYk6446hMrjOcnF7ysEPEeadrj8FyQpbkySi3oq1n84H5ro0QzWv50VEcgfybfWylJXA6fPDk49Y%2FxmA%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 810c70788d53849e-BOM
+{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+15:06:14.295 [main] INFO  com.intuit.karate - [print] {
+  "page": 1,
+  "per_page": 6,
+  "total": 12,
+  "total_pages": 2,
+  "data": [
+    {
+      "id": 1,
+      "name": "cerulean",
+      "year": 2000,
+      "color": "#98B2D1",
+      "pantone_value": "15-4020"
+    },
+    {
+      "id": 2,
+      "name": "fuchsia rose",
+      "year": 2001,
+      "color": "#C74375",
+      "pantone_value": "17-2031"
+    },
+    {
+      "id": 3,
+      "name": "true red",
+      "year": 2002,
+      "color": "#BF1932",
+      "pantone_value": "19-1664"
+    },
+    {
+      "id": 4,
+      "name": "aqua sky",
+      "year": 2003,
+      "color": "#7BC4C4",
+      "pantone_value": "14-4811"
+    },
+    {
+      "id": 5,
+      "name": "tigerlily",
+      "year": 2004,
+      "color": "#E2583E",
+      "pantone_value": "17-1456"
+    },
+    {
+      "id": 6,
+      "name": "blue turquoise",
+      "year": 2005,
+      "color": "#53B0AE",
+      "pantone_value": "15-5217"
+    }
+  ],
+  "support": {
+    "url": "https://reqres.in/#support-heading",
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+  }
+}
+ 
+15:20:58.867 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:21:00.827 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:21:00.925 [main] ERROR com.intuit.karate - classpath:examples/users/users.feature:42
+Given url  URL+'users?page=2'
+js failed:
+>>>>
+01: URL+'users?page=2'
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "URL" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:examples/users/users.feature:42
+15:22:15.502 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:22:17.265 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:22:17.769 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users?page=2
+1 > Accept: application/json
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.4.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:22:18.749 [main] DEBUG com.intuit.karate - response time in milliseconds: 975
+1 < 200
+1 < Date: Wed, 04 Oct 2023 09:52:18 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1696401579&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=HSMEPPjerXjO2PxZVO1IzQUyOuVO4vjK47s2PONS8eU%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1696401579&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=HSMEPPjerXjO2PxZVO1IzQUyOuVO4vjK47s2PONS8eU%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 4354
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 810c88046ea784c2-BOM
+{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+15:22:18.785 [main] INFO  com.intuit.karate - [print] {
+  "page": 2,
+  "per_page": 6,
+  "total": 12,
+  "total_pages": 2,
+  "data": [
+    {
+      "id": 7,
+      "email": "michael.lawson@reqres.in",
+      "first_name": "Michael",
+      "last_name": "Lawson",
+      "avatar": "https://reqres.in/img/faces/7-image.jpg"
+    },
+    {
+      "id": 8,
+      "email": "lindsay.ferguson@reqres.in",
+      "first_name": "Lindsay",
+      "last_name": "Ferguson",
+      "avatar": "https://reqres.in/img/faces/8-image.jpg"
+    },
+    {
+      "id": 9,
+      "email": "tobias.funke@reqres.in",
+      "first_name": "Tobias",
+      "last_name": "Funke",
+      "avatar": "https://reqres.in/img/faces/9-image.jpg"
+    },
+    {
+      "id": 10,
+      "email": "byron.fields@reqres.in",
+      "first_name": "Byron",
+      "last_name": "Fields",
+      "avatar": "https://reqres.in/img/faces/10-image.jpg"
+    },
+    {
+      "id": 11,
+      "email": "george.edwards@reqres.in",
+      "first_name": "George",
+      "last_name": "Edwards",
+      "avatar": "https://reqres.in/img/faces/11-image.jpg"
+    },
+    {
+      "id": 12,
+      "email": "rachel.howell@reqres.in",
+      "first_name": "Rachel",
+      "last_name": "Howell",
+      "avatar": "https://reqres.in/img/faces/12-image.jpg"
+    }
+  ],
+  "support": {
+    "url": "https://reqres.in/#support-heading",
+    "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+  }
+}
+ 
+15:30:57.149 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:30:58.896 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:30:58.962 [main] ERROR com.intuit.karate - classpath:examples/users/users.feature:31
+And param page =2
+no step-definition method match found for: param page =2
+classpath:examples/users/users.feature:31
+12:08:59.833 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: examples/users/Post.feature - mismatched input '<EOF>' expecting {FEATURE_TAGS, FEATURE}
+12:11:00.722 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:12:54.211 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:12:55.732 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:12:56.432 [main] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 43
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.4.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Naveen","job":"Software Engineer"}
+
+12:12:57.428 [main] DEBUG com.intuit.karate - response time in milliseconds: 987
+1 < 201
+1 < Date: Thu, 05 Oct 2023 06:42:57 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 93
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"5d-PWY7H2LE8U3YBfOFs7bAd4ri4dI"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2Fw%2BrDW9f29TvkChYQBKtqPow5ymRo7WUZ2MQh0mb05pWSh%2B3op8soaH25kUydLNEW4s1Au%2FFIPoJZ3ypZRmMdRwRR9llTNdGqbWlxp8hKShSsA4lOGKFtHOSNw%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8113b002bd438614-BOM
+{"name":"Naveen","job":"Software Engineer","id":"101","createdAt":"2023-10-05T06:42:57.296Z"}
+
+14:58:40.852 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:58:42.501 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:58:43.036 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://reqres.in/api/users/2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 33
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.4.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Mahesh","job":"Analyst"}
+
+14:58:43.969 [main] DEBUG com.intuit.karate - response time in milliseconds: 929
+1 < 200
+1 < Date: Thu, 05 Oct 2023 09:28:43 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"48-kF3j5x08yOkfMpiHQQmbc/xPxPc"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=8TektV0LAmqYkXbJs7U3%2FoaW45GGm6kLaKkMtLUp0N6jtAnISYaBdcz6olPFDWWIeqTMadcrjDlQLr5Y905grqMaSGVbZ8iKVhjJJaE1oKL0O9hQaeAeJf7A5A%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 8114a2d95829419e-BOM
+{"name":"Mahesh","job":"Analyst","updatedAt":"2023-10-05T09:28:43.933Z"}
+
+14:58:43.984 [main] ERROR com.intuit.karate - classpath:examples/users/Put.feature:8
+Then status 201
+status code was: 200, expected: 201, response time in milliseconds: 929, url: https://reqres.in/api/users/2, response: 
+{"name":"Mahesh","job":"Analyst","updatedAt":"2023-10-05T09:28:43.933Z"}
+classpath:examples/users/Put.feature:8
+15:02:47.095 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:02:48.566 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:02:49.054 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://reqres.in/api/users/2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 33
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.4.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Mahesh","job":"Analyst"}
+
+15:02:49.776 [main] DEBUG com.intuit.karate - response time in milliseconds: 717
+1 < 200
+1 < Date: Thu, 05 Oct 2023 09:32:49 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"48-7hkgIl9Pwo1myuUTNAYwH0SC9yo"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=IL%2BCoMqdL3xRjltbBoeVtLS4T8GaujjJRFOUuAFsD%2BkvoU3nC4cFjW7H4WIz%2BABbi49OLw%2BAfIwLazmksgStmjLF%2BCTISkIhN0WA4KmmjIRnZgDPU6r%2B2tpT2Q%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 8114a8d97a623a22-BOM
+{"name":"Mahesh","job":"Analyst","updatedAt":"2023-10-05T09:32:49.719Z"}
+
+15:02:49.792 [main] ERROR com.intuit.karate - classpath:examples/users/Put.feature:8
+Then status 201
+status code was: 200, expected: 201, response time in milliseconds: 717, url: https://reqres.in/api/users/2, response: 
+{"name":"Mahesh","job":"Analyst","updatedAt":"2023-10-05T09:32:49.719Z"}
+classpath:examples/users/Put.feature:8
+15:03:13.207 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:03:14.739 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:03:15.405 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://reqres.in/api/users/2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 33
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.4.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Mahesh","job":"Analyst"}
+
+15:03:15.716 [main] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 745 milliseconds for url: https://reqres.in/api/users/2
+15:03:15.717 [main] ERROR com.intuit.karate - classpath:examples/users/Put.feature:7
+When method PUT
+http call failed after 745 milliseconds for url: https://reqres.in/api/users/2
+javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+classpath:examples/users/Put.feature:7
+20:41:16.736 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:41:18.448 [main] INFO  com.intuit.karate - karate.env system property was: null 
+20:41:19.273 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://reqres.in/api/users/2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 33
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.4.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Mahesh","job":"Analyst"}
+
+20:41:20.350 [main] DEBUG com.intuit.karate - response time in milliseconds: 1071
+1 < 200
+1 < Date: Fri, 13 Oct 2023 15:11:20 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1697209880&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=YkJ5Ig0czACHGrg%2FsdCXpcAW0akqrrUxuGzJYARnMvM%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1697209880&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=YkJ5Ig0czACHGrg%2FsdCXpcAW0akqrrUxuGzJYARnMvM%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"48-BDUX0CwtjT177g75Lno1JeRKW1E"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 815883b57ba44047-SIN
+{"name":"Mahesh","job":"Analyst","updatedAt":"2023-10-13T15:11:20.187Z"}
+
+17:41:24.783 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:41:26.526 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:41:27.477 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://reqres.in/api/users/2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 33
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.4.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Mahesh","job":"Analyst"}
+
+17:41:28.380 [main] DEBUG com.intuit.karate - response time in milliseconds: 899
+1 < 200
+1 < Date: Sat, 14 Oct 2023 12:11:28 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"48-1ppWToavh7c0KAMEzpzVFrhVyLM"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=nsPhpwFpSX7qYgHrS1cVlnULATKX%2BPIIIrl2Z9PnmJMPrhQ3Hb415Iz3Gbe%2Bv1uWCdykYFIl6jYV0cAW7zilHWXER7LogFr4hxHs6r3rYrwtEAEgDxOECwQkWw%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 815fb99afc6d8563-BOM
+{"name":"Mahesh","job":"Analyst","updatedAt":"2023-10-14T12:11:28.039Z"}
+
+17:42:43.873 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: examples/users/Post.feature - mismatched input '*' expecting <EOF>
+17:43:32.464 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:43:34.262 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:43:34.353 [main] ERROR com.intuit.karate - classpath:examples/users/Post.feature:5
+* header Accept ='appilcation/json'
+no step-definition method match found for: header Accept ='appilcation/json'
+classpath:examples/users/Post.feature:5
